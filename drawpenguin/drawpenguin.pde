@@ -1,0 +1,20 @@
+  PImage img;
+  
+  int x, y;
+  void setup (){
+  size(1280, 800);
+  img= loadImage("penguin.jpg");
+  }
+  
+  void draw(){
+  //random numbers
+  int x=int(random(1280));
+  int y=int(random(800));
+  for(int i=0; i< 1000; i++){
+    color c=img.get (x, y);
+    fill (c);
+    noStroke();
+    ellipse(x,y,1,1);
+  }
+ }
+
