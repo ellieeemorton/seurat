@@ -1,3 +1,5 @@
+ /* pjs@preload="penguin.jpg"; */
+ 
   PImage img;
   
   int x, y;
