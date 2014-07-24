@@ -2,7 +2,7 @@
  
   PImage img;
   
-  int x, y;
+  int a, x, y;
   void setup (){
   size(1280, 800);
   img= loadImage("penguin.jpg");
@@ -16,7 +16,21 @@
     color c=img.get (x, y);
     fill (c);
     noStroke();
-    ellipse(x,y,10,10);
+    ellipse(x,y,key,key);
   }
- }
-
+  if (keyPressed==true){
+     if (key==1) {
+         key=5;
+     }
+     if(key==2){
+         key=90;
+     }
+     if (key==3){
+         key=1000;
+     }
+    
+   }
+   else {
+     key=10;
+   }
+  }
